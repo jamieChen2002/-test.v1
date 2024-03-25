@@ -1,4 +1,9 @@
 /********** Template CSS **********/
+<!-- 引入 Owl Carousel 的 CSS 文件 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+
 :root {
     --primary: #AB7442;
     --light: #F5F5F5;

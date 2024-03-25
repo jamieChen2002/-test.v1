@@ -1,5 +1,3 @@
-<!-- 引入 Owl Carousel 的 JavaScript 文件 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 (function ($) {
     "use strict";

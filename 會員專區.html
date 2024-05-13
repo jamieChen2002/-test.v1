@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>西湖玩什麼</title>
+    <title>會員專區</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -42,7 +42,7 @@
     <!-- Spinner End -->
 
 
-     <!-- Topbar Start -->
+ <!-- Topbar Start -->
 <div class="container-fluid bg-light p-0">
     <div class="row gx-0 d-none d-lg-flex">
         <div class="col-lg-7 px-5 text-start">
@@ -70,8 +70,7 @@
     </div>
 </div>
 <!-- Topbar End -->
-
-    <!-- Navbar Start -->
+<!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
     <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
         <img src="img/美宣/綜合圖檔-05.png" alt="吉軒農場" width="200" height="60">
@@ -99,17 +98,16 @@
                 <div class="dropdown-menu fade-up m-0">
                     <a href="草莓＆香瓜.html" class="dropdown-item">草莓＆香瓜</a>
                     <a href="西湖伴手禮.html" class="dropdown-item">西湖伴手禮</a>
-                   
                 </div>
             </div>
-            <a href="會員專區.html" class="nav-item nav-link">會員專區</a>
+            <a href="會員優惠.html" class="nav-item nav-link">會員專區</a>
             <a href="購物車.html" class="nav-item nav-link">購物車</a>
             <form class="d-flex align-items-center" onsubmit="return search()" style="min-width: 100px;">
                 <i class="bi bi-search me-0"></i>
                 <input id="searchInput" class="form-control bg-transparent border-0 rounded-0 px-3 py-0 border-bottom" type="search" placeholder="" aria-label="搜尋" style="max-width: 60px;">
             </form>
         </div>
-        <a href="會員專區.html" class="btn btn-custom py-4 px-lg-10 d-none d-lg-block">加入會員獲得優惠<i class="fa fa-arrow-right ms-1"></i></a>
+       
     </div>
 </nav>
 <!-- Navbar End -->
@@ -118,11 +116,11 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5">
         <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">西湖玩什麼</h1>
+            <h1 class="display-3 text-white mb-3 animated slideInDown">會員專區</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-white" href="index.html">主頁</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">草莓香瓜小知識</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">主頁</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">會員專區</a></li>
                     <li class="breadcrumb-item text-white active" aria-current="page"></li>
                 </ol>
             </nav>
@@ -131,29 +129,169 @@
     <!-- Page Header End -->
 
 
-    <!-- 404 Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container text-center">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <i class="bi bi-wrench display-4 text-strawberry"></i>
-                    <br>
-                    <h1 class="display-1 text-strawberry"></h1>
-                    <br>
-                    <h1 class="mb-4 text-strawberry">網頁施工中，敬請期待</h1>
-                    <br>
-                    <p class="mb-4 text-strawberry">再等等我們吧！嘿咻！嘿咻！(丁丁努力搬運中)</p>
-                    <br>
-                    <br>
-                    <img class="img-fluid w-20" src="img/美宣/走路貓.png" style="object-fit: cover; height: 40%;" alt="">
-                    <br>
-                    <a class="btn btn-custom py-3 px-5" href="index.html">回主頁</a>
+  
+    <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 6rem 0;">
+        <div class="container member-area px-lg-0">
+            <div class="row justify-content-center g-0 mx-lg-0">
+                <!-- 登入表單 -->
+                <div class="col-lg-4 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 ps-lg-0 login-form" id="login-form">
+                        <div class="text-start text-strawberry" id="login-title">
+                            <h2>會員登入</h2>
+                        </div>
+                        <form action="/login" method="POST">
+                            <div class="mb-3">
+                                <label for="login-username" class="form-label">使用者信箱</label>
+                                <input type="text" class="form-control" id="login-username" name="username" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="login-password" class="form-label">密碼</label>
+                                <input type="password" class="form-control" id="login-password" name="password" required>
+                                <div class="mt-2">
+                                    <a href="#" class="forgot-password-link text-strawberry">忘記密碼？</a>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-custom py-3 px-5 rounded-pill fw-bold text-uppercase">登入</button>
+                            <p class="mt-3">還不是會員？ <a href="#" class="btn btn-link  register-link">註冊新會員</a></p>
+                            <a href="/login/line" class="line-btn mt-2 "><img src="img/44dp/btn_login_press.png" alt="LINE 登入"></a>
+                        </form>
+                    </div>
+                </div>
+            
+            <!-- 註冊表單 -->
+            <div class="col-lg-4 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                <div class="p-lg-5 ps-lg-0 login-form" style="display: none;" id="register-form">
+                    <div class="section-title text-start" >
+                        <h2>註冊新會員</h2>
+                    </div>
+                    <form action="/register" method="POST">
+                        <div class="mb-3">
+                            <label for="new-username" class="form-label">使用者名稱</label>
+                            <input type="text" class="form-control" id="new-username" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">電話號碼</label>
+                            <div class="input-group">
+                                <select class="form-select col-4" id="country-code" name="country-code">
+                                    <option value="">請選擇國籍地區 (Country)</option>
+                                    <option value="65">新加坡 (Singapore, SG) (+65)</option>
+                                    <option value="60">馬來西亞 (Malaysia, MY) (+60)</option>
+                                    <option value="62">印度尼西亞 (Indonesia, ID) (+62)</option>
+                                    <option value="63">菲律賓 (Philippines, PH) (+63)</option>
+                                    <option value="81">日本 (Japan, JP) (+81)</option>
+                                    <option value="82">韓國 (South Korea, KR) (+82)</option>
+                                    <option value="86">中國 (China, CN) (+86)</option>
+                                    <option value="852">香港 (Hong Kong, HK) (+852)</option>
+                                    <option value="886">台灣 (Taiwan, TW) (+886)</option>
+                                    <option value="1">美國 (United States, US) (+1)</option>
+                                    <option value="44">英國 (United Kingdom, UK) (+44)</option>
+                                    <option value="33">法國 (France, FR) (+33)</option>
+                                    <option value="49">德國 (Germany, DE) (+49)</option>
+                                    <option value="7">俄羅斯 (Russia, RU) (+7)</option>
+                                </select>
+                                
+                                <input type="tel" class="form-control col" id="phone" name="phone" placeholder="請輸入電話號碼" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">電子郵件</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="age" class="form-label">年齡區段</label>
+                            <select class="form-select" id="age" name="age" required>
+                                <option value="">選擇年齡區段</option>
+                                <option value="1">20 歲以下</option>
+                                <option value="2">20-30 歲</option>
+                                <option value="3">31-50 歲</option>
+                                <option value="4">50 歲以上</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="new-password" class="form-label">密碼</label>
+                            <input type="password" class="form-control" id="new-password" name="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-custom py-3 px-5 mt-3 rounded-pill fw-bold text-uppercase">註冊</button>
+                        <p class="mt-3">點擊註冊即代表您同意我們的 <a href="#" class="text-pink">服務條款</a> 和 <a href="#" class="text-pink">隱私政策</a>。</p>
+                    </form>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--  Bootstrap JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const registerLink = document.querySelector('.register-link');
+            const loginForm = document.getElementById('login-form');
+            const registerForm = document.getElementById('register-form');
+            const loginTitle = document.getElementById('login-title');
+
+            registerLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                loginForm.style.display = 'none';
+                registerForm.style.display = 'block';
+                registerLink.style.display = 'none';
+            });
+            
+        });
+       
+    </script>
+    
+    
+        
+    <!-- Member Coupons Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class=" text-center">
+            <h1 class="display-8 mb-5"  >會員優惠券專區</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="coupon-card">
+                    <div class="coupon-image">
+                        <img src="img/回饋/草莓幣.png" alt="Coupon Image">
+                    </div>
+                    <div class="coupon-content">
+                        <p class="coupon-type">折扣券</p>
+                        <h5 class="coupon-title">50草莓幣</h5>
+                        <button class="btn btn-outline-light mt-3">領取</button>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-4 col-md-6">
+                <div class="coupon-card">
+                    <div class="coupon-image">
+                        <img src="img/回饋/草莓幣.png" alt="Coupon Image">
+                    </div>
+                    <div class="coupon-content">
+                        <p class="coupon-type">折扣券</p>
+                        <h5 class="coupon-title">50草莓幣</h5>
+                        <button class="btn btn-outline-light mt-3">領取</button>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-4 col-md-6">
+                <div class="coupon-card">
+                    <div class="coupon-image">
+                        <img src="img/回饋/草莓幣.png" alt="Coupon Image">
+                    </div>
+                    <div class="coupon-content">
+                        <p class="coupon-type">折扣券</p>
+                        <h5 class="coupon-title">50草莓幣</h5>
+                        <button class="btn btn-outline-light mt-3">領取</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- 404 End -->
-        
+</div>
+<!-- Member Coupons End -->
 
 <!-- Footer Start -->
 <div class="container-fluid bg-strawberry text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -214,12 +352,16 @@
 
 
 <!-- Back to Top 按鈕 -->
+
 <a href="#" class="btn btn-lg btn-login btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 <!-- 購物車按鈕 -->
 <div class="cart-button">
     <a href="#" class="btn btn-lg btn-login btn-lg-square rounded-0"><i class="fas fa-shopping-cart"></i> </a>
 </div>
+
+
+
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -229,8 +371,6 @@
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

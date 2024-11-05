@@ -126,6 +126,36 @@
     justify-content: center;
     font-weight: normal;
 }
+/* 客服按鈕和Back to Top按鈕的定位 */
+.customer-service-btn, .back-to-top {
+    position: fixed;
+    z-index: 999; /* 確保按鈕位於頁面上層 */
+  }
+  
+  /* 調整客服按鈕的垂直位置 */
+  .customer-service-btn {
+    bottom: 80px; /* 讓客服按鈕稍微離底部更遠一點，避免與返回頂部按鈕重疊 */
+    right: 0px;  /* 距離頁面右側  0px */
+  }
+  
+  /* 返回頂部按鈕 */
+  .back-to-top {
+    bottom: 20px; /* 保持返回頂部按鈕距離底部 20px */
+    right: 20px;  /* 保持返回頂部按鈕距離右側 20px */
+  }
+  
+  /* 客服按鈕圖片設定，放大兩倍 */
+  .customer-service-btn img {
+    max-width: 100%;  /* 將圖片寬度放大至原來的兩倍 */
+    height: auto;     /* 高度自動調整，保持比例 */
+    display: block;   /* 移除圖片底部可能的空隙 */
+  }
+  
+  /* Back to Top按鈕內的圖示樣式 */
+  .back-to-top i {
+    font-size: 24px; /* 圖標大小可根據需要調整 */
+  }
+  
 
 /*** Navbar ***/
 .navbar .dropdown-toggle::after {
@@ -407,6 +437,11 @@
     cursor: pointer;
     transition: .5s;
     border-bottom: 2px solid transparent;
+}
+.portfolio-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
 }
 
 #portfolio-flters li:hover,
